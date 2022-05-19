@@ -1,0 +1,21 @@
+{
+  "name": "selenidejs-mobile-test-appium-ts-template",
+  "version": "1.0.0",
+  "description": "mobile tests with appium based on webdriverio + selenidejs + jest (tuned for react-native apps)",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint ."
+  },
+  "keywords": [
+    "testing",
+    "test",
+    "webdriverio",
+    "selenidejs",
+    "appium"
+  ],
+  "author": {
+    "name": "Iakiv Kramarenko",
+    "email": "yashaka@gmail.com"
+  },
+  "license": "MIT"
+}
