@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "mobile tests with appium based on webdriverio + selenidejs + jest (tuned for react-native apps)",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint ."
+    "test": "jest",
+    "lint": "eslint . --ext .ts"
   },
   "keywords": [
     "testing",
@@ -17,5 +17,17 @@
     "name": "Iakiv Kramarenko",
     "email": "yashaka@gmail.com"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^27.5.1",
+    "@typescript-eslint/eslint-plugin": "^5.25.0",
+    "@typescript-eslint/parser": "^5.25.0",
+    "eslint": "^8.15.0",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-plugin-jest": "^26.2.2",
+    "jest": "^28.1.0",
+    "ts-jest": "^28.0.2",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.4"
+  }
 }
