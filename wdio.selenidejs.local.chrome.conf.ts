@@ -1,7 +1,10 @@
 import { RemoteOptions } from 'webdriverio';
 
 export const config: RemoteOptions = {
-  automationProtocol: 'devtools',
+  // automationProtocol: 'webdriver', // default
+  hostname: '127.0.0.1',
+  port: 4444,
+  path: '/wd/hub',
   capabilities: {
     browserName: 'chrome',
   },
