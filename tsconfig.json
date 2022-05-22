@@ -26,5 +26,10 @@
 
     /* Completeness */
     "skipLibCheck": true                                 /* Skip type checking all .d.ts files. */
-  }
+  },
+  "types": [
+    "node",
+    "jest",
+    "webdriverio/async", // TODO: do we really need it?
+  ]
 }

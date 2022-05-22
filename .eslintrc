@@ -23,11 +23,19 @@
     // Allow most functions to rely on type inference. If the function is exported, then `@typescript-eslint/explicit-module-boundary-types` will ensure it's typed.
     "@typescript-eslint/explicit-function-return-type": "off",
     "arrow-parens": ["error", "as-needed"],
-    "max-len": ["error", { 
-        "code": 84, 
+    "max-len": ["error", {
+        "code": 84,
         "ignorePattern": "^(import| *test\\( *it\\(| *describe\\()",
         "ignoreComments": true
     }],
-    "no-nested-ternary": "off"
+    "no-nested-ternary": "off",
+    "import/no-extraneous-dependencies": "off",
+    "jest/expect-expect": [
+      "error",
+      {
+        "assertFunctionNames": ["expect", "**.should"],
+        "additionalTestBlockFunctions": []
+      }
+    ]
   }
 }
