@@ -30,6 +30,6 @@
   "types": [
     "node",
     "jest",
-    "webdriverio/async", // TODO: do we really need it?
+    "webdriverio/async", // TODO: do we really need it? see https://webdriver.io/docs/typescript/
   ]
 }

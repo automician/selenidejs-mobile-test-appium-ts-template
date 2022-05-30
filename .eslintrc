@@ -28,6 +28,7 @@
         "ignorePattern": "^(import| *test\\( *it\\(| *describe\\()",
         "ignoreComments": true
     }],
+    "no-underscore-dangle": "off",
     "no-nested-ternary": "off",
     "import/no-extraneous-dependencies": "off",
     "jest/expect-expect": [
