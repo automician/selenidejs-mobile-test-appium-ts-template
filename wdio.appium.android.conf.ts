@@ -10,6 +10,7 @@ export const config: RemoteOptions = {
     platformName: 'Android',
     app: path.resolve('./app-release.apk'),
     automationName: 'UiAutomator2',
+    fullReset: true,
   },
   waitforTimeout: 10000,
   connectionRetryCount: 3,
