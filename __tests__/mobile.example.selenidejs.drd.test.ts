@@ -1,6 +1,6 @@
 import * as wdio from 'webdriverio';
 import * as selenide from 'selenidejs';
-// import { be, have, perform, by } from 'selenidejs';
+import { have } from 'selenidejs';
 import { WebDriver, Session } from 'selenium-webdriver';
 import { HttpClient, Executor } from 'selenium-webdriver/http';
 import { config } from '../wdio.appium.android.conf';
@@ -26,7 +26,7 @@ beforeAll(async () => {
     .configuredWith()
     .driver(webdriver)
     ._locationStrategy(mobile.selectorToBy)
-    .timeout(2000)
+    .timeout(10000)
     .build();
 });
 
@@ -38,11 +38,11 @@ afterAll(async () => {
 test('velas wallet: onboarding | selenidejs version |', async () => {
   await browser.element(
     'SignUp-password',
-  ).element('InputSecure-editText').type('123456');
+  ).element('InputSecure-Input').type('123456');
 
   await browser.element('«Next»').click();
   await browser.element('«Create»').click();
   await browser.element('«Accept»').click();
 
-  await driver.pause(10000);
+  await browser.element('Wallets-totalBalance-value').should(have.text('$ 0.00'));
 });
