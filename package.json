@@ -26,7 +26,7 @@
     "eslint-config-airbnb-typescript": "^17.0.0",
     "eslint-plugin-jest": "^26.2.2",
     "jest": "^28.1.0",
-    "selenidejs": "^1.3.4",
+    "selenidejs": "^1.3.6",
     "ts-jest": "^28.0.2",
     "ts-node": "^10.7.0",
     "typescript": "^4.6.4",
