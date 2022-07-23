@@ -13,6 +13,8 @@ To run mobile tests, check the [mobile-wallet repo](https://github.com/velas/mob
 
 ## todos
 
+- patch be.visible to work as be.present
+- patch SelenideElement to have .longPress
 - why selenidejs does not tell that reason of failure is second not first selector?
 
   ```text
